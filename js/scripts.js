@@ -20,17 +20,17 @@ document.addEventListener("DOMContentLoaded", function() {
         let category = "";
 
         if (bmi < 18.5) {
-            category = "Kurus";
+            category = "Kekurangan Berat Badan";
         } else if (bmi >= 18.5 && bmi < 24.9) {
-            category = "Normal";
+            category = "Normal (Ideal)";
         } else if (bmi >= 25 && bmi < 29.9) {
-            category = "Gemuk";
+            category = "Kelebihan Berat Badan";
         } else {
-            category = "Obesitas";
+            category = "Kegemukan (Obesitas)";
         }
 
-        bmiValue.textContent = `BMI Anda: ${bmi}`;
-        bmiCategory.textContent = `Kategori: ${category}`;
+        bmiValue.textContent = `BMI Anda : ${bmi}`;
+        bmiCategory.textContent = `Kategori Anda : ${category}`;
         resultDiv.style.display = "block";
     });
 
